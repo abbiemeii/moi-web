@@ -1,0 +1,66 @@
+/*primary colors*/
+$primary-cl: #edf2f8;
+$second-cl: #313bac;
+$linear-cl: linear-gradient(
+    90deg,
+    #00ffe6 -14.08%,
+    #f72585 -14.07%,
+    #9500ff 19.79%,
+    #3f37c9 57.22%,
+    #00ffe6 99.99%,
+    rgba(0, 255, 230, 0) 100%
+);
+
+$body-cl: #141212;
+$line-cl: #74747fa0;
+$border-cl: rgba(255, 255, 255, 0.18);
+
+$white-cl: #fff;
+$black-cl: #000;
+$gray-cl: #6b7688;
+
+/*global text color*/
+$text-cl: #ffffff;
+$text-black-cl: #000;
+
+//box shadow
+$box-shadow: 0px 0px 27px 0px #edf2f8;
+
+// timing transition
+$t: 0.4s;
+$cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
+
+/*font families*/
+$font-stack: "Open Sans", sans-serif;
+$font-main: "Geomanist";
+
+/*headings typo*/
+$fz-text: 16px;
+$lh-text: normal;
+
+$fz-text-m: 16px;
+$lh-text-m: normal;
+
+//============================================================//
+
+/*BOXED LAYOUT*/
+$container-max-width: 1920px;
+$container-width: 1750px;
+$container-padding: 60px;
+$container-fluid-padding: 120px;
+$container-mb-padding: 30px;
+
+$mobile-rotate: 737px;
+
+/*GRID - media queries breakpoints*/
+$xxs-min: 576px;
+$xs-min: 769px;
+$sm-min: 1025px;
+$md-min: 1200px;
+$lg-min: 1600px;
+
+$xxs-max: ($xxs-min - 1); // Small Mobile
+$xs-max: ($xs-min - 1); // Mobile
+$sm-max: ($sm-min - 1); // Table
+$md-max: ($md-min - 1); // Desktop
+$lg-max: ($lg-min - 1); // Large Desktop

@@ -1,0 +1,129 @@
+@-ms-viewport {
+    width: device-width;
+}
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+html,
+body {
+    width: 100%;
+    background-color: $body-cl;
+    max-width: $container-max-width;
+    margin: auto;
+    @include text($fz-text, $lh-text, $text-cl, none, normal, $font-main);
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 1;
+
+    @include customscroll(4px, #000, $primary-cl);
+
+    .container {
+        width: 100%;
+        padding-left: $container-padding;
+        padding-right: $container-padding;
+        margin-right: auto;
+        margin-left: auto;
+        .line-right {
+            right: 0;
+            position: absolute;
+            // @include abCenter(top);
+        }
+        .line-left {
+            left: 0;
+            position: absolute;
+            // @include abCenter(top);
+        }
+        @include xs {
+            padding-left: $container-mb-padding;
+            padding-right: $container-mb-padding;
+        }
+    }
+    .container-fluid {
+        width: 100%;
+        padding-right: $container-fluid-padding;
+        padding-left: $container-fluid-padding;
+        margin-right: auto;
+        margin-left: auto;
+        @include xs {
+            padding-right: $container-mb-padding;
+            padding-left: $container-mb-padding;
+        }
+    }
+    .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .no-gap > .col,
+    .no-gap > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    @media (min-width: $xxs-min) {
+        .container {
+            max-width: 680px;
+        }
+    }
+    @media (min-width: $xs-min) {
+        .container {
+            max-width: 880px;
+        }
+    }
+    @media (min-width: $sm-min) {
+        .container {
+            max-width: 960px;
+        }
+    }
+    @media (min-width: $md-min) {
+        .container {
+            max-width: $container-width;
+        }
+    }
+
+    .mainwrapper {
+        width: 100%;
+        margin: auto;
+        @include visible;
+    }
+
+    .action {
+        display: flex;
+        align-items: center;
+
+        & > * ~ * {
+            margin-left: 30px;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $primary-cl !important;
+        @include xs {
+            display: none;
+        }
+    }
+
+    .centered {
+        margin: 10rem auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

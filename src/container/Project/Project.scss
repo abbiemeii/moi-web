@@ -1,10 +1,11 @@
 @import "../../index.scss";
 
 .project {
+    padding: 0 50px;
     .container {
-        height: calc(100vh - 86px);
         position: relative;
-        padding-top: 40px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         padding-left: 350px;
         padding-right: 350px;
         @media screen and(max-width: 1550px) {
@@ -19,6 +20,22 @@
             padding-left: 30px;
             padding-right: 30px;
         }
+    }
+    @media screen and(min-width: 1600px) {
+        margin-top: 10px;
+    }
+    @media screen and(min-width: 1900px) {
+        margin-top: 100px;
+    }
+    @include lg {
+        margin-top: 50px;
+    }
+    @include md {
+        margin-top: 80px;
+    }
+
+    @include xs {
+        margin-top: 50px;
     }
 }
 

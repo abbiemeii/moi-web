@@ -1,16 +1,37 @@
 @import "../../index.scss";
 
 .about {
+    padding: 0 50px;
     .container {
-        height: calc(100vh - 86px);
         display: flex;
         position: relative;
         padding-top: 50px;
+        padding-bottom: 50px;
+
         @include xs {
             padding-top: 75px;
             flex-direction: column;
             height: 100%;
         }
+    }
+
+    @media screen and(min-width: 1600px) {
+        margin-top: 50px;
+    }
+    @media screen and(min-width: 1900px) {
+        margin-top: 100px;
+    }
+    @include lg {
+        margin-top: 150px;
+    }
+    @include md {
+        margin-top: 100px;
+    }
+    @include sm {
+        margin-top: 120px;
+    }
+    @include xs {
+        margin-top: 60px;
     }
 }
 
@@ -21,37 +42,22 @@
     justify-content: center;
     img {
         width: 65%;
-        height: 95%;
     }
     @include md {
         img {
             width: 100%;
-            height: 80%;
         }
     }
     @include xs {
         width: 100%;
-        img {
-            height: 100%;
-        }
     }
 }
 
 .about__content {
     width: 45%;
     text-align: center;
-    padding: 200px 0 0 100px;
+    padding: 150px 0 0 100px;
     @include flex(flex-start, center, column);
-    @include md {
-        padding-left: 50px;
-    }
-    @include sm {
-        padding-left: 0;
-    }
-    @include xs {
-        width: 100%;
-        padding: 0;
-    }
     h1 {
         font-size: 54px;
         font-family: "Geomanist Bold";
@@ -98,9 +104,20 @@
         text-align: left;
         line-height: 24px;
         font-size: 18px;
-        padding: 0 25px;
         @include md {
             font-size: 12px;
         }
+        @include sm {
+            text-align: center;
+        }
+    }
+    @include md {
+        padding-top: 100px;
+        padding-left: 0;
+    }
+
+    @include xs {
+        width: 100%;
+        padding: 0;
     }
 }

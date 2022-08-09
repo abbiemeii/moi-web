@@ -1,16 +1,33 @@
 @import "../../index.scss";
 
 .background {
+    padding: 0 50px;
     .container {
-        height: calc(100vh - 86px);
         display: flex;
         position: relative;
         padding-top: 50px;
+        padding-bottom: 50px;
         @include xs {
             flex-direction: column-reverse;
             height: 100%;
             padding-top: 75px;
         }
+    }
+    @media screen and(min-width: 1600px) {
+        margin-top: 50px;
+    }
+    @media screen and(min-width: 1900px) {
+        margin-top: 100px;
+    }
+    @include lg {
+        margin-top: 50px;
+    }
+    @include md {
+        margin-top: 80px;
+    }
+
+    @include xs {
+        margin-top: 50px;
     }
 }
 
@@ -21,18 +38,15 @@
     justify-content: center;
     img {
         width: 80%;
-        height: 100%;
     }
     @include md {
         img {
             width: 120%;
-            height: 90%;
         }
     }
     @include sm {
         img {
             width: 135%;
-            height: 85%;
         }
     }
     @include xs {
@@ -108,7 +122,13 @@
     p {
         font-size: 17px;
         @include md {
-            font-size: 15px;
+            font-size: 14px;
+        }
+        @include sm {
+            font-size: 13px;
+        }
+        @include xs {
+            font-size: 14px;
         }
     }
 

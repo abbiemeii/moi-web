@@ -5,7 +5,12 @@
         height: calc(100vh - 86px);
         display: flex;
         position: relative;
-        padding: 50px 0;
+        padding-top: 50px;
+        @include xs {
+            flex-direction: column-reverse;
+            height: 100%;
+            padding-top: 75px;
+        }
     }
 }
 
@@ -15,17 +20,25 @@
     align-items: flex-end;
     justify-content: center;
     img {
-        width: 70%;
-        height: 95%;
-        @include lg {
-            width: 65%;
+        width: 80%;
+        height: 100%;
+    }
+    @include md {
+        img {
+            width: 120%;
+            height: 90%;
         }
-        @media screen and (max-width: 1500px) {
-            width: 80%;
+    }
+    @include sm {
+        img {
+            width: 135%;
+            height: 85%;
         }
-        @include md {
-            width: 100%;
-            height: 80%;
+    }
+    @include xs {
+        width: 100%;
+        img {
+            width: 70%;
         }
     }
 }
@@ -36,23 +49,32 @@
     display: flex;
     flex-direction: column;
     @include md {
-        padding-right: 50px;
+        padding-right: 0;
+        padding-left: 50px;
+    }
+    @include xs {
+        width: 100%;
+        padding-top: 0;
+        padding-left: 0;
+        justify-content: center;
     }
 
     h1 {
-        font-size: 54px;
-        width: 300px;
-        font-family: "Geomanist Bold";
-        color: rgba(0, 0, 0, 0);
-        background: $linear-cl;
-        -webkit-background-clip: text;
+        justify-content: flex-start;
+        width: 320px;
+        margin-left: 60px;
         margin-bottom: 68px;
-        margin-left: 150px;
         @media screen and(max-width:1450px) {
             font-size: 40px;
         }
         @include md {
             font-size: 35px;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+        }
+        @include xs {
+            margin-bottom: 50px;
         }
     }
 }
@@ -74,12 +96,20 @@
             background-clip: padding-box, border-box;
             background-origin: padding-box, border-box;
         }
+        @include md {
+            span {
+                @include size(100px, 35px);
+            }
+        }
     }
     img {
         margin: 0 23px;
     }
     p {
-        font-size: 14px;
+        font-size: 17px;
+        @include md {
+            font-size: 15px;
+        }
     }
 
     .march {

@@ -6,6 +6,11 @@
         display: flex;
         position: relative;
         padding-top: 50px;
+        @include xs {
+            padding-top: 75px;
+            flex-direction: column;
+            height: 100%;
+        }
     }
 }
 
@@ -15,14 +20,19 @@
     align-items: flex-end;
     justify-content: center;
     img {
-        width: 60%;
+        width: 65%;
         height: 95%;
-        @include lg {
-            width: 65%;
-        }
-        @include md {
+    }
+    @include md {
+        img {
             width: 100%;
             height: 80%;
+        }
+    }
+    @include xs {
+        width: 100%;
+        img {
+            height: 100%;
         }
     }
 }
@@ -34,6 +44,13 @@
     @include flex(flex-start, center, column);
     @include md {
         padding-left: 50px;
+    }
+    @include sm {
+        padding-left: 0;
+    }
+    @include xs {
+        width: 100%;
+        padding: 0;
     }
     h1 {
         font-size: 54px;
@@ -79,8 +96,8 @@
 
     p {
         text-align: left;
-        line-height: 18px;
-        font-size: 14px;
+        line-height: 24px;
+        font-size: 18px;
         padding: 0 25px;
         @include md {
             font-size: 12px;

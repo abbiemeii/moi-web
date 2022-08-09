@@ -10,6 +10,10 @@
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
+    // cursor: none;
+    @include md {
+        cursor: auto;
+    }
 }
 html,
 body {
@@ -21,7 +25,7 @@ body {
     scroll-behavior: smooth;
     position: relative;
     z-index: 1;
-
+    overflow: hidden;
     @include customscroll(4px, #000, $primary-cl);
 
     .container {
@@ -30,15 +34,24 @@ body {
         padding-right: $container-padding;
         margin-right: auto;
         margin-left: auto;
+        height: 100%;
         .line-right {
             right: 0;
             position: absolute;
-            // @include abCenter(top);
+            @include abCenter(top);
+
+            @include xs {
+                display: none;
+            }
         }
         .line-left {
             left: 0;
             position: absolute;
-            // @include abCenter(top);
+            @include abCenter(top);
+
+            @include xs {
+                display: none;
+            }
         }
         @include xs {
             padding-left: $container-mb-padding;
@@ -125,5 +138,48 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+.title {
+    font-size: 54px;
+    font-family: "Geomanist Bold";
+    @include mid(true);
+    color: rgba(0, 0, 0, 0);
+    background: $linear-cl;
+    -webkit-background-clip: text;
+}
+
+.cursor {
+    background-color: $white-cl;
+    @include size(30px);
+    border: 2px solid $white-cl;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99;
+    mix-blend-mode: difference;
+    @include md {
+        display: none;
+    }
+}
+
+.box {
+    position: relative;
+    @include mid(true);
+    margin-left: 23px;
+    transition: all $t;
+    .image-hover {
+        @include abCenter(top);
+        opacity: 0;
+        transition: all $t;
+    }
+    &:hover img {
+        opacity: 0;
+    }
+    &:hover .image-hover {
+        opacity: 1;
     }
 }

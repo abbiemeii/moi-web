@@ -1,0 +1,60 @@
+@import "../../index.scss";
+
+.contact {
+    @include size(100vw, calc(100vh - 86px));
+
+    .container {
+        padding: 50px 0;
+        @include flex(space-between, center, column);
+    }
+}
+
+.contact__content {
+    @include mid(true);
+    flex-direction: column;
+    margin-top: 130px;
+    h1 {
+        width: 325px;
+        margin-bottom: 84px;
+    }
+}
+
+.contact__content-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    .image {
+        @include size(70px, 45px);
+        @include mid(true);
+        img {
+            transition: all $t;
+        }
+    }
+    p,
+    a {
+        color: $white-cl;
+        margin-left: 21px;
+        font-size: 15px;
+        transition: all $t;
+    }
+    &:hover {
+        img {
+            opacity: 0;
+        }
+        .image-hover {
+            opacity: 1;
+        }
+    }
+}
+
+.contact__tks {
+    @include mid(true);
+    p {
+        font-size: 20px;
+        margin: 0 15px;
+        color: rgba(0, 0, 0, 0);
+        background: $linear-cl;
+        -webkit-background-clip: text;
+        transition: all $t;
+    }
+}

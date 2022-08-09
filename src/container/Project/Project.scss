@@ -1,0 +1,137 @@
+@import "../../index.scss";
+
+.project {
+    .container {
+        height: calc(100vh - 86px);
+        position: relative;
+        padding-top: 40px;
+        padding-left: 350px;
+        padding-right: 350px;
+        @media screen and(max-width: 1550px) {
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+        @include md {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        @include sm {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+
+.project__title {
+    display: flex;
+    align-items: center;
+    img {
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+    @media screen and(max-width: 1550px) {
+        h1 {
+            font-size: 40px;
+        }
+    }
+    @include md {
+        h1 {
+            font-size: 35px;
+        }
+    }
+    @include sm {
+        h1 {
+            font-size: 28px;
+        }
+    }
+
+    @include xxs {
+        img {
+            display: none;
+        }
+    }
+}
+
+.project__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.project__wrap-left {
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+    width: 68%;
+    .project__wrap-item {
+        width: calc((100% / 3) - 2.5rem);
+        &:last-child {
+            margin-top: 50px;
+            width: 47%;
+            position: relative;
+            .more {
+                position: absolute;
+                bottom: 110px;
+                right: -560px;
+                @include mid(true);
+                width: 540px;
+
+                P {
+                    font-size: 12px;
+                    margin: 0 15px;
+                }
+                @include xs {
+                    width: 350px;
+                    right: -270px;
+                    bottom: -90px;
+                }
+                @include xxs {
+                    flex-direction: column;
+                    bottom: -100px;
+                    p {
+                        margin: 20px 0;
+                    }
+                }
+            }
+            @include sm {
+                margin-top: 80px;
+            }
+            @include xs {
+                margin-top: 30px;
+            }
+        }
+        @include xs {
+            width: calc((100% / 3));
+        }
+    }
+}
+
+.project__wrap-right {
+    width: 28%;
+    .project__wrap-item {
+        .img {
+            width: 100%;
+        }
+    }
+}
+
+.project__wrap-item {
+    .img {
+        img {
+            width: 100%;
+            @include xs {
+                width: 100%;
+            }
+        }
+    }
+    .name {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        span {
+            margin-bottom: 5px;
+        }
+    }
+}

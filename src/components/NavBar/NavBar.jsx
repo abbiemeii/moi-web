@@ -5,7 +5,7 @@ import { HiX } from 'react-icons/hi';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { motion } from 'framer-motion';
 import { images } from 'constants';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const headerMenu = [
   { name: 'About me', path: '/' },
@@ -29,7 +29,7 @@ const NavBar = () => {
   };
 
   return (
-    <nab className="header__navbar">
+    <div className="header__navbar">
       <div className="header__navbar-logo">
         <Link to="/" className="box">
           <img src={images.Logo} alt="logo" />
@@ -40,7 +40,12 @@ const NavBar = () => {
         {headerMenu.map((item, index) => {
           return (
             <li key={index}>
-              <Link to={item.path}>{item.name}</Link>
+              <NavLink
+                className={({ isActive }) => (isActive ? 'active' : undefined)}
+                to={item.path}
+              >
+                {item.name}
+              </NavLink>
             </li>
           );
         })}
@@ -83,12 +88,17 @@ const NavBar = () => {
                     </li>
                   );
                 })}
+                <li>
+                  <Link to="/contact" onClick={() => setIsOpen(false)}>
+                    Contact
+                  </Link>
+                </li>
               </ul>
             </motion.div>
           )}
         </div>
       </div>
-    </nab>
+    </div>
   );
 };
 

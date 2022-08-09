@@ -28,35 +28,35 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
       scale: 1,
       opacity: 1,
       transition: {
-        delay: 1.3,
+        delay: 1.2,
       },
     },
     item3: {
       scale: 1,
       opacity: 1,
       transition: {
-        delay: 1.6,
+        delay: 1.4,
       },
     },
     item4: {
       scale: 1,
       opacity: 1,
       transition: {
-        delay: 1.9,
+        delay: 1.6,
       },
     },
     item5: {
       scale: 1,
       opacity: 1,
       transition: {
-        delay: 2.1,
+        delay: 1.8,
       },
     },
     item6: {
       scale: 1,
       opacity: 1,
       transition: {
-        delay: 2.4,
+        delay: 2,
       },
     },
   };

@@ -20,14 +20,14 @@ const About = ({ textEnter, textTitleEnter, textLeave }) => {
       scale: 1,
       opacity: 1,
       transition: {
-        delay: 2,
+        delay: 1.8,
       },
     },
     visible3: {
       scale: 1,
       opacity: 1,
       transition: {
-        delay: 2.2,
+        delay: 2,
       },
     },
     image: {

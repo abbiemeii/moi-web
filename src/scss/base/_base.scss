@@ -10,7 +10,7 @@
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    // cursor: none;
+    cursor: none;
     @include md {
         cursor: auto;
     }

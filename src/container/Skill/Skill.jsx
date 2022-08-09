@@ -69,7 +69,7 @@ const Skill = ({ textTitleEnter, skillEnter, textLeave }) => {
             onMouseLeave={textLeave}
           >
             <div className="img">
-              <img src={images.Skill1} alt="skill" />
+              <img src={images.Skill1} alt="skill" loading="lazy" />
             </div>
             <div className="name pink">
               <span>Brand Identity</span>
@@ -84,7 +84,7 @@ const Skill = ({ textTitleEnter, skillEnter, textLeave }) => {
             onMouseLeave={textLeave}
           >
             <div className="img">
-              <img src={images.Skill2} alt="skill" />
+              <img src={images.Skill2} alt="skill" loading="lazy" />
             </div>
             <div className="name aqua">
               <span>Grahic Design</span>
@@ -99,7 +99,7 @@ const Skill = ({ textTitleEnter, skillEnter, textLeave }) => {
             onMouseLeave={textLeave}
           >
             <div className="img">
-              <img src={images.Skill3} alt="skill" />
+              <img src={images.Skill3} alt="skill" loading="lazy" />
             </div>
             <div className="name pink">
               <span>Illustration</span>
@@ -114,7 +114,7 @@ const Skill = ({ textTitleEnter, skillEnter, textLeave }) => {
             onMouseLeave={textLeave}
           >
             <div className="img">
-              <img src={images.Skill4} alt="skill" />
+              <img src={images.Skill4} alt="skill" loading="lazy" />
             </div>
             <div className="name aqua">
               <span>Photography</span>

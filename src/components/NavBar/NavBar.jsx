@@ -32,8 +32,13 @@ const NavBar = () => {
     <div className="header__navbar">
       <div className="header__navbar-logo">
         <Link to="/" className="box">
-          <img src={images.Logo} alt="logo" />
-          <img src={images.LogoGradient} alt="logo" className="image-hover" />
+          <img src={images.Logo} alt="logo" loading="lazy" />
+          <img
+            src={images.LogoGradient}
+            alt="logo"
+            className="image-hover"
+            loading="lazy"
+          />
         </Link>
       </div>
       <ul className="header__navbar-links">
@@ -58,15 +63,17 @@ const NavBar = () => {
             src={images.SearchGradient}
             alt="search"
             className="search-button"
+            loading="lazy"
           />
         </form>
 
         <Link to="/contact" className="box">
-          <img src={images.Contact} alt="contact-icon" />
+          <img src={images.Contact} alt="contact-icon" loading="lazy" />
           <img
             src={images.ContactGradient}
             className="image-hover"
             alt="contact-icon"
+            loading="lazy"
           />
         </Link>
         <div className="header__navbar-menu">

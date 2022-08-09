@@ -64,7 +64,12 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
   return (
     <div className="project">
       <div className="container">
-        <img src={images.LineRight} alt="line" className="line-right" />
+        <img
+          src={images.LineRight}
+          alt="line"
+          className="line-right"
+          loading="lazy"
+        />
         <div className="project__content">
           <motion.div
             initial="hidden"
@@ -72,7 +77,7 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
             variants={variants}
             className="project__title"
           >
-            <img src={images.Dot3} alt="dot" />
+            <img src={images.Dot3} alt="dot" loading="lazy" />
             <h1
               className="title"
               onMouseEnter={textTitleEnter}
@@ -80,7 +85,7 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
             >
               WHAT I ACHIEVED
             </h1>
-            <img src={images.Line1} alt="line" />
+            <img src={images.Line1} alt="line" loading="lazy" />
           </motion.div>
           <div className="project__wrap">
             <div className="project__wrap-left">
@@ -91,7 +96,7 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                 className="project__wrap-item"
               >
                 <div className="img">
-                  <img src={images.Project1} alt="project" />
+                  <img src={images.Project1} alt="project" loading="lazy" />
                 </div>
                 <div
                   className="name"
@@ -109,7 +114,7 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                 className="project__wrap-item"
               >
                 <div className="img">
-                  <img src={images.Project2} alt="project" />
+                  <img src={images.Project2} alt="project" loading="lazy" />
                 </div>
                 <div
                   className="name"
@@ -127,7 +132,7 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                 className="project__wrap-item"
               >
                 <div className="img">
-                  <img src={images.Project3} alt="project" />
+                  <img src={images.Project3} alt="project" loading="lazy" />
                 </div>
                 <div
                   className="name"
@@ -145,7 +150,7 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                 className="project__wrap-item"
               >
                 <div className="img">
-                  <img src={images.Project5} alt="project" />
+                  <img src={images.Project5} alt="project" loading="lazy" />
                 </div>
                 <div
                   className="name"
@@ -163,11 +168,11 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                   variants={variants}
                   className="more"
                 >
-                  <img src={images.Line2} alt="more" />
+                  <img src={images.Line2} alt="more" loading="lazy" />
                   <p onMouseEnter={textEnter} onMouseLeave={textLeave}>
                     and many other projects which you can find on my Behance
                   </p>
-                  <img src={images.Dot1} alt="dot" />
+                  <img src={images.Dot1} alt="dot" loading="lazy" />
                 </motion.div>
               </motion.div>
             </div>
@@ -179,7 +184,7 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                 className="project__wrap-item"
               >
                 <div className="img">
-                  <img src={images.Project4} alt="project" />
+                  <img src={images.Project4} alt="project" loading="lazy" />
                 </div>
                 <div
                   className="name"
@@ -193,7 +198,12 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
             </div>
           </div>
         </div>
-        <img src={images.LineLeft} alt="line" className="line-left" />
+        <img
+          src={images.LineLeft}
+          alt="line"
+          className="line-left"
+          loading="lazy"
+        />
       </div>
     </div>
   );

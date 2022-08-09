@@ -68,11 +68,12 @@ const Contact = ({ textEnter, textTitleEnter, textLeave }) => {
               className="contact__content-item"
             >
               <div className="image box">
-                <img src={images.Email} alt="email" />
+                <img src={images.Email} alt="email" loading="lazy" />
                 <img
                   src={images.EmailGradient}
                   className="image-hover"
                   alt="email"
+                  loading="lazy"
                 />
               </div>
               <p onMouseEnter={textEnter} onMouseLeave={textLeave}>
@@ -86,11 +87,12 @@ const Contact = ({ textEnter, textTitleEnter, textLeave }) => {
               className="contact__content-item"
             >
               <div className="image box">
-                <img src={images.Phone} alt="phone" />
+                <img src={images.Phone} alt="phone" loading="lazy" />
                 <img
                   src={images.PhoneGradient}
                   className="image-hover"
                   alt="phone"
+                  loading="lazy"
                 />
               </div>
               <p onMouseEnter={textEnter} onMouseLeave={textLeave}>
@@ -104,11 +106,12 @@ const Contact = ({ textEnter, textTitleEnter, textLeave }) => {
               className="contact__content-item"
             >
               <div className="image box">
-                <img src={images.Behance} alt="behance" />
+                <img src={images.Behance} alt="behance" loading="lazy" />
                 <img
                   src={images.BehanceGradient}
                   className="image-hover"
                   alt="behance"
+                  loading="lazy"
                 />
               </div>
               <a
@@ -127,9 +130,9 @@ const Contact = ({ textEnter, textTitleEnter, textLeave }) => {
           variants={variants}
           className="contact__tks"
         >
-          <img src={images.Dot4} alt="dot" />
+          <img src={images.Dot4} alt="dot" loading="lazy" />
           <p>Thank you</p>
-          <img src={images.Dot5} alt="dot" />
+          <img src={images.Dot5} alt="dot" loading="lazy" />
         </motion.div>
       </div>
     </div>

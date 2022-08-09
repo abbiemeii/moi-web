@@ -43,7 +43,12 @@ const About = ({ textEnter, textTitleEnter, textLeave }) => {
   return (
     <div className="about">
       <div className="container">
-        <img src={images.LineRight} alt="line" className="line-right" />
+        <img
+          src={images.LineRight}
+          alt="line"
+          className="line-right"
+          loading="lazy"
+        />
         <div className="about__content">
           <motion.h1
             initial="hidden"
@@ -80,7 +85,12 @@ const About = ({ textEnter, textTitleEnter, textLeave }) => {
             alt="moi"
           />
         </div>
-        <img src={images.LineLeft} alt="line" className="line-left" />
+        <img
+          src={images.LineLeft}
+          alt="line"
+          className="line-left"
+          loading="lazy"
+        />
       </div>
     </div>
   );

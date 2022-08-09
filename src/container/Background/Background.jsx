@@ -51,7 +51,12 @@ const Background = ({ textEnter, textTitleEnter, textLeave }) => {
   return (
     <div className="background">
       <div className="container">
-        <img src={images.LineRight} alt="line" className="line-right" />
+        <img
+          src={images.LineRight}
+          alt="line"
+          className="line-right"
+          loading="lazy"
+        />
         <div className="background__img">
           <motion.img
             src={images.Moi2}
@@ -82,7 +87,7 @@ const Background = ({ textEnter, textTitleEnter, textLeave }) => {
               <div className="time">
                 <span>MAY 2021</span>
               </div>
-              <img src={images.Dot1} alt="dot" />
+              <img src={images.Dot1} alt="dot" loading="lazy" />
               <p onMouseEnter={textEnter} onMouseLeave={textLeave}>
                 Started my journey as a multimedia student at Arena Multimedia.
               </p>
@@ -96,7 +101,7 @@ const Background = ({ textEnter, textTitleEnter, textLeave }) => {
               <div className="time">
                 <span>MARCH 2022</span>
               </div>
-              <img src={images.Dot2} alt="dot" />
+              <img src={images.Dot2} alt="dot" loading="lazy" />
               <div className="march">
                 <p onMouseEnter={textEnter} onMouseLeave={textLeave}>
                   Graduated the first semester - Graphic Design with top score.
@@ -116,7 +121,7 @@ const Background = ({ textEnter, textTitleEnter, textLeave }) => {
               <div className="time new">
                 <span>AUGUST 2022</span>
               </div>
-              <img src={images.Dot3} alt="dot" />
+              <img src={images.Dot3} alt="dot" loading="lazy" />
               <p onMouseEnter={textEnter} onMouseLeave={textLeave}>
                 On my way to finish semester II - UIUX
               </p>
@@ -124,7 +129,12 @@ const Background = ({ textEnter, textTitleEnter, textLeave }) => {
           </div>
         </div>
 
-        <img src={images.LineLeft} alt="line" className="line-left" />
+        <img
+          src={images.LineLeft}
+          alt="line"
+          className="line-left"
+          loading="lazy"
+        />
       </div>
     </div>
   );

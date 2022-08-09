@@ -1,9 +1,8 @@
 @import "../../index.scss";
 
 .contact {
-    @include size(100vw, calc(100vh - 86px));
-
     .container {
+        height: calc(100vh - 86px);
         padding: 50px 0;
         @include flex(space-between, center, column);
     }

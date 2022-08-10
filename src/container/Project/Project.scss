@@ -20,20 +20,13 @@
             padding-left: 30px;
             padding-right: 30px;
         }
-    }
-    @media screen and(min-width: 1600px) {
-        margin-top: 10px;
+        @media screen and(max-width: 980px) {
+            height: 100vh;
+        }
     }
     @media screen and(min-width: 1900px) {
         margin-top: 100px;
     }
-    @include lg {
-        margin-top: 50px;
-    }
-    @include md {
-        margin-top: 80px;
-    }
-
     @include xs {
         margin-top: 50px;
     }
@@ -61,6 +54,11 @@
             font-size: 28px;
         }
     }
+    @include xs {
+        img {
+            display: none;
+        }
+    }
 
     @include xxs {
         img {
@@ -74,6 +72,9 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 40px;
+    @media screen and(max-width: 980px) {
+        display: block;
+    }
 }
 
 .project__wrap-left {
@@ -97,6 +98,9 @@
                     font-size: 12px;
                     margin: 0 15px;
                 }
+                @media screen and(max-width: 980px) {
+                    display: none;
+                }
                 @include xs {
                     width: 350px;
                     right: -270px;
@@ -116,11 +120,28 @@
             @include xs {
                 margin-top: 30px;
             }
+            @media screen and(max-width: 980px) {
+                @include flex(center, center, column);
+                width: 100%;
+                .img {
+                    width: 60%;
+                }
+            }
         }
         @include xs {
-            width: calc((100% / 3));
+            width: 100;
         }
     }
+    @media screen and(max-width: 980px) {
+        width: 100%;
+    }
+    // @include xs {
+    //     display: block;
+    //     width: 100%;
+    //     .img {
+    //         width: 65%;
+    //     }
+    // }
 }
 
 .project__wrap-right {
@@ -128,6 +149,16 @@
     .project__wrap-item {
         .img {
             width: 100%;
+        }
+    }
+    @media screen and(max-width: 980px) {
+        @include mid(true);
+        width: 100%;
+        .project__wrap-item {
+            width: 60%;
+            .img {
+                width: 100%;
+            }
         }
     }
 }

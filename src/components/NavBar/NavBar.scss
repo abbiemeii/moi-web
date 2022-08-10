@@ -15,6 +15,9 @@
     img {
         @include size(130px, 50px);
         transition: opacity 0.3s;
+        @include xs {
+            @include size(100px, 45px);
+        }
     }
 }
 
@@ -150,6 +153,9 @@
                     text-transform: uppercase;
                     font-weight: 500;
                 }
+            }
+            @include xs {
+                height: 100%;
             }
         }
 

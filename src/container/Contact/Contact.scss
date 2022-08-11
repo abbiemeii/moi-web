@@ -3,24 +3,20 @@
 .contact {
     .container {
         padding: 50px 0;
-        @include flex(space-between, center, column);
+        @include flex(space-around, center, column);
     }
 }
 
 .contact__content {
     @include mid(true);
     flex-direction: column;
-    margin-top: 100px;
     h1 {
         width: 325px;
         margin-bottom: 84px;
     }
-    @media screen and(min-width: 1900px) {
-        margin-top: 150px;
-    }
     @include xs {
         h1 {
-            font-size: 45px;
+            font-size: 40px;
         }
     }
 }

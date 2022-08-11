@@ -33,9 +33,6 @@
             padding-right: 30px;
         }
         @media screen and(max-width: 980px) {
-            height: 100vh;
-        }
-        @include xs {
             height: 100%;
         }
     }
@@ -170,9 +167,6 @@
             @media screen and(max-width: 980px) {
                 @include flex(center, center, column);
                 width: 100%;
-                // .img {
-                //     width: 80%;
-                // }
             }
         }
         @include md {
@@ -207,7 +201,7 @@
         @include mid(true);
         width: 100%;
         .project__wrap-item {
-            width: 100%;
+            width: 55%;
         }
     }
 }

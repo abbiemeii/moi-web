@@ -4,6 +4,9 @@
     .container {
         padding: 50px 0;
         @include flex(space-between, center, column);
+        @media screen and(max-width: 1650px) {
+            height: 800px;
+        }
     }
 }
 
@@ -21,6 +24,9 @@
     display: flex;
     align-items: center;
     margin-bottom: 50px;
+    .box {
+        margin-left: 0;
+    }
     .image {
         @include size(70px, 45px);
         @include mid(true);

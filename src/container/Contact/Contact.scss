@@ -4,8 +4,8 @@
     .container {
         padding: 50px 0;
         @include flex(space-between, center, column);
-        @media screen and(max-width: 1650px) {
-            height: 800px;
+        @media screen and(max-width: 1850px) {
+            height: 850px;
         }
     }
 }
@@ -13,10 +13,13 @@
 .contact__content {
     @include mid(true);
     flex-direction: column;
-    margin-top: 130px;
+    margin-top: 100px;
     h1 {
         width: 325px;
         margin-bottom: 84px;
+    }
+    @media screen and(min-width: 1900px) {
+        margin-top: 150px;
     }
 }
 

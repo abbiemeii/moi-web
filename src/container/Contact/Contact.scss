@@ -61,6 +61,7 @@
         margin: 0 15px;
         color: rgba(0, 0, 0, 0);
         background: $linear-cl;
+        background-clip: text;
         -webkit-background-clip: text;
         transition: all $t;
     }

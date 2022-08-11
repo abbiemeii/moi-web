@@ -32,6 +32,9 @@
         @media screen and(max-width: 980px) {
             height: 100vh;
         }
+        @include xs {
+            height: 100%;
+        }
     }
     @media screen and(min-width: 1900px) {
         margin-top: 100px;
@@ -149,13 +152,14 @@
                 margin: 80px 0;
             }
             @include xs {
-                margin: 0;
+                margin-top: 0;
+                margin-bottom: 40px;
             }
             @media screen and(max-width: 980px) {
                 @include flex(center, center, column);
                 width: 100%;
                 .img {
-                    width: 60%;
+                    width: 80%;
                 }
             }
         }
@@ -175,7 +179,7 @@
     }
     @include xs {
         .img {
-            width: 60%;
+            width: 80%;
         }
     }
 }
@@ -191,7 +195,7 @@
         @include mid(true);
         width: 100%;
         .project__wrap-item {
-            width: 60%;
+            width: 80%;
         }
     }
 }

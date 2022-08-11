@@ -77,6 +77,7 @@
         color: rgba(0, 0, 0, 0);
         font-weight: 700;
         background: $linear-cl;
+        background-clip: text;
         -webkit-background-clip: text;
         position: relative;
         &::before {

@@ -5,8 +5,12 @@
     .container {
         padding-top: 50px;
         padding-bottom: 50px;
+
         @include sm {
             height: 100vh;
+        }
+        @include xs {
+            height: 100%;
         }
     }
     .title {

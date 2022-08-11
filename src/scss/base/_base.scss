@@ -60,6 +60,7 @@ body {
         }
 
         @include xs {
+            height: 100vh;
             padding-left: $container-mb-padding;
             padding-right: $container-mb-padding;
         }
@@ -153,6 +154,7 @@ body {
     @include mid(true);
     color: rgba(0, 0, 0, 0);
     background: $linear-cl;
+    background-clip: text;
     -webkit-background-clip: text;
 }
 

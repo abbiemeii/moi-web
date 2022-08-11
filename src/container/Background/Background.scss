@@ -11,6 +11,8 @@
         @include xs {
             display: block;
             padding: 0;
+            padding-bottom: 110px;
+            height: 100%;
         }
     }
     @media screen and(min-width: 1900px) {
@@ -73,7 +75,7 @@
 
     h1 {
         justify-content: flex-start;
-        width: 320px;
+        width: 300px;
         margin-left: 60px;
         margin-bottom: 68px;
         @media screen and(max-width:1450px) {
@@ -134,5 +136,8 @@
         span {
             color: #00ffe6;
         }
+    }
+    @include xs {
+        margin-bottom: 40px;
     }
 }

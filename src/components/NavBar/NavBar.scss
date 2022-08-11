@@ -35,6 +35,7 @@
             color: $white-cl;
             font-size: 17px;
             background: $linear-cl;
+            background-clip: text;
             -webkit-background-clip: text;
             transition: all 0.3s;
             &:hover {
@@ -47,6 +48,7 @@
                 font-weight: bolder;
                 color: rgba(0, 0, 0, 0);
                 background: $linear-cl;
+                background-clip: text;
                 -webkit-background-clip: text;
                 @include transform(scale(1.2));
             }

@@ -8,6 +8,9 @@
         padding-bottom: 50px;
         padding-left: 320px;
         padding-right: 320px;
+        @media screen and(min-width: 1900px) {
+            padding-left: 270px;
+        }
         @media screen and(max-width: 1670px) {
             padding-left: 230px;
             padding-right: 230px;
@@ -42,6 +45,10 @@
     @include xs {
         margin-top: 50px;
     }
+    @include xxs {
+        margin-top: 0;
+        padding: 0 10px;
+    }
 }
 
 .project__title {
@@ -74,6 +81,9 @@
     }
 
     @include xxs {
+        h1 {
+            font-size: 26px;
+        }
         img {
             display: none;
         }
@@ -107,7 +117,9 @@
         }
     }
     @include xs {
-        margin-bottom: 60px;
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
     }
 }
 

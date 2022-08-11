@@ -60,9 +60,9 @@ body {
         }
 
         @include xs {
-            height: 100vh;
             padding-left: $container-mb-padding;
             padding-right: $container-mb-padding;
+            height: calc(100vh - 77px);
         }
     }
     .container-fluid {

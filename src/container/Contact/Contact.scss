@@ -4,9 +4,6 @@
     .container {
         padding: 50px 0;
         @include flex(space-between, center, column);
-        @media screen and(max-width: 1850px) {
-            height: 850px;
-        }
     }
 }
 
@@ -20,6 +17,11 @@
     }
     @media screen and(min-width: 1900px) {
         margin-top: 150px;
+    }
+    @include xs {
+        h1 {
+            font-size: 45px;
+        }
     }
 }
 

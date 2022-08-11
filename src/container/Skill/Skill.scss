@@ -44,8 +44,9 @@
 .skill__content-item {
     width: calc((100% / 4) - 3rem);
     border: 2px solid transparent;
-    border-image: $linear-cl;
-    border-image-slice: 1;
+    background: linear-gradient(to right, $body-cl, $body-cl), $linear-cl;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
     transition: all $t;
 
     @media screen and (min-width: 1200px) {

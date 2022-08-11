@@ -87,7 +87,7 @@ const Skill = ({ textTitleEnter, skillEnter, textLeave }) => {
               <img src={images.Skill2} alt="skill" loading="lazy" />
             </div>
             <div className="name aqua">
-              <span>Grahic Design</span>
+              <span>Graphic Design</span>
             </div>
           </motion.div>
           <motion.div

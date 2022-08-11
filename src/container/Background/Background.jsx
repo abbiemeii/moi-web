@@ -57,15 +57,7 @@ const Background = ({ textEnter, textTitleEnter, textLeave }) => {
           className="line-right"
           loading="lazy"
         />
-        <div className="background__img">
-          <motion.img
-            src={images.Moi2}
-            alt="moi"
-            initial="hidden"
-            animate="image"
-            variants={variants}
-          />
-        </div>
+
         <div className="background__content">
           <motion.h1
             className="title"
@@ -128,7 +120,15 @@ const Background = ({ textEnter, textTitleEnter, textLeave }) => {
             </motion.div>
           </div>
         </div>
-
+        <div className="background__img">
+          <motion.img
+            src={images.Moi2}
+            alt="moi"
+            initial="hidden"
+            animate="image"
+            variants={variants}
+          />
+        </div>
         <img
           src={images.LineLeft}
           alt="line"

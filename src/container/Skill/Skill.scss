@@ -10,7 +10,11 @@
         }
     }
     .title {
+        width: 465px;
+        margin-left: auto;
+        margin-right: auto;
         @include xxs {
+            width: 270px;
             font-size: 30px;
         }
     }
@@ -40,16 +44,24 @@
     border-image-slice: 1;
     transition: all $t;
 
-    &:hover {
-        transform: scale(1.2) !important;
-        transition: all $t;
+    @media screen and (min-width: 1200px) {
+        &:hover {
+            transform: scale(1.2) !important;
+            transition: all $t;
+        }
     }
     .img {
+        position: relative;
+        overflow: hidden;
         img {
             width: 100%;
             @include xs {
+                @include midImg;
                 width: 100%;
             }
+        }
+        @include xs {
+            height: 620px;
         }
     }
     .name {
@@ -83,7 +95,6 @@
         }
     }
     @include sm {
-        // width: calc((100% / 4) - 1.5rem);
         width: 46%;
         margin-bottom: 50px;
     }

@@ -49,6 +49,15 @@ const About = ({ textEnter, textTitleEnter, textLeave }) => {
           className="line-right"
           loading="lazy"
         />
+        <div className="about__img">
+          <motion.img
+            initial="hidden"
+            animate="image"
+            variants={variants}
+            src={images.Moi1}
+            alt="moi"
+          />
+        </div>
         <div className="about__content">
           <motion.h1
             initial="hidden"
@@ -76,15 +85,7 @@ const About = ({ textEnter, textTitleEnter, textLeave }) => {
             with xD
           </motion.p>
         </div>
-        <div className="about__img">
-          <motion.img
-            initial="hidden"
-            animate="image"
-            variants={variants}
-            src={images.Moi1}
-            alt="moi"
-          />
-        </div>
+
         <img
           src={images.LineLeft}
           alt="line"

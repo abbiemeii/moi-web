@@ -26,7 +26,6 @@ body {
     position: relative;
     z-index: 1;
     @include customscroll(4px, #000, $primary-cl);
-
     @media screen and(min-width: 1281px) {
         overflow: hidden;
     }
@@ -40,10 +39,7 @@ body {
         padding-right: $container-padding;
         margin-right: auto;
         margin-left: auto;
-        height: 895px;
-        @media screen and(max-width: 1280px) {
-            height: 800px;
-        }
+        height: 100vh;
         .line-right {
             right: 0;
             position: absolute;
@@ -64,7 +60,6 @@ body {
         }
 
         @include xs {
-            height: 100vh;
             padding-left: $container-mb-padding;
             padding-right: $container-mb-padding;
         }

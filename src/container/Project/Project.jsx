@@ -89,28 +89,30 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
           </motion.div>
           <div className="project__wrap">
             <div className="project__wrap-left">
-              <motion.div
+              <motion.a
+                href="https://www.behance.net/gallery/128077319/Photo-Manipulation"
                 initial="hidden"
                 animate="item1"
                 variants={variants}
+                onMouseEnter={textEnter}
+                onMouseLeave={textLeave}
                 className="project__wrap-item"
               >
                 <div className="img">
                   <img src={images.Project1} alt="project" loading="lazy" />
                 </div>
-                <div
-                  className="name"
-                  onMouseEnter={textEnter}
-                  onMouseLeave={textLeave}
-                >
+                <div className="name">
                   <span>Top 1</span>
                   <span>in photo manipulation class</span>
                 </div>
-              </motion.div>
-              <motion.div
+              </motion.a>
+              <motion.a
+                href="https://www.behance.net/gallery/135002563/Saigon-through-35mm"
                 initial="hidden"
                 animate="item2"
                 variants={variants}
+                onMouseEnter={textEnter}
+                onMouseLeave={textLeave}
                 className="project__wrap-item"
               >
                 <div className="img">
@@ -124,11 +126,14 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                   <span>Top 1</span>
                   <span>in photography class</span>
                 </div>
-              </motion.div>
-              <motion.div
+              </motion.a>
+              <motion.a
+                href="https://www.behance.net/gallery/126235925/Digital-Illustration"
                 initial="hidden"
                 animate="item3"
                 variants={variants}
+                onMouseEnter={textEnter}
+                onMouseLeave={textLeave}
                 className="project__wrap-item"
               >
                 <div className="img">
@@ -142,11 +147,14 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                   <span>Top 1</span>
                   <span>in illustration class</span>
                 </div>
-              </motion.div>
-              <motion.div
+              </motion.a>
+              <motion.a
+                href="https://www.behance.net/gallery/137968877/BRAND-IDENTITY-Meraki-Tattoo-Studio"
                 initial="hidden"
                 animate="item5"
                 variants={variants}
+                onMouseEnter={textEnter}
+                onMouseLeave={textLeave}
                 className="project__wrap-item"
               >
                 <div className="img">
@@ -165,6 +173,8 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                 <motion.div
                   initial="hidden"
                   animate="item6"
+                  onMouseEnter={textEnter}
+                  onMouseLeave={textLeave}
                   variants={variants}
                   className="more"
                 >
@@ -174,27 +184,26 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                   </p>
                   <img src={images.Dot1} alt="dot" loading="lazy" />
                 </motion.div>
-              </motion.div>
+              </motion.a>
             </div>
             <div className="project__wrap-right">
-              <motion.div
+              <motion.a
+                href="https://www.behance.net/gallery/147888083/Ve-nghe-yeu-ke-Book-Illustration"
                 initial="hidden"
                 animate="item4"
                 variants={variants}
+                onMouseEnter={textEnter}
+                onMouseLeave={textLeave}
                 className="project__wrap-item"
               >
                 <div className="img">
                   <img src={images.Project4} alt="project" loading="lazy" />
                 </div>
-                <div
-                  className="name"
-                  onMouseEnter={textEnter}
-                  onMouseLeave={textLeave}
-                >
+                <div className="name">
                   <span>Illustrator of </span>
                   <span>Ve, Nge, Yeu, Ke book (2022)</span>
                 </div>
-              </motion.div>
+              </motion.a>
             </div>
           </div>
         </div>

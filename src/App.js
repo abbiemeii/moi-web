@@ -45,12 +45,6 @@ function App() {
       x: mousePosition.x - 35,
       y: mousePosition.y - 35,
     },
-    skill: {
-      height: 60,
-      width: 60,
-      x: mousePosition.x - 35,
-      y: mousePosition.y - 35,
-    },
   };
 
   const textTitleEnter = () => setCursorVariant('titleText');
@@ -96,7 +90,7 @@ function App() {
           element={
             <Skill
               mousePosition={mousePosition}
-              skillEnter={() => skillEnter()}
+              textEnter={() => textEnter()}
               textTitleEnter={() => textTitleEnter()}
               textLeave={() => textLeave()}
             />

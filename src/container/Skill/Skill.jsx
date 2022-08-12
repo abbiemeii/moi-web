@@ -3,7 +3,7 @@ import React from 'react';
 import './Skill.scss';
 import { motion } from 'framer-motion';
 
-const Skill = ({ textTitleEnter, skillEnter, textLeave }) => {
+const Skill = ({ textTitleEnter, textEnter, textLeave }) => {
   const variants = {
     hidden: {
       scale: 0.8,
@@ -65,7 +65,7 @@ const Skill = ({ textTitleEnter, skillEnter, textLeave }) => {
             initial="hidden"
             animate="item1"
             variants={variants}
-            onMouseEnter={skillEnter}
+            onMouseEnter={textEnter}
             onMouseLeave={textLeave}
           >
             <div className="img">
@@ -80,7 +80,7 @@ const Skill = ({ textTitleEnter, skillEnter, textLeave }) => {
             initial="hidden"
             animate="item2"
             variants={variants}
-            onMouseEnter={skillEnter}
+            onMouseEnter={textEnter}
             onMouseLeave={textLeave}
           >
             <div className="img">
@@ -95,7 +95,7 @@ const Skill = ({ textTitleEnter, skillEnter, textLeave }) => {
             initial="hidden"
             animate="item3"
             variants={variants}
-            onMouseEnter={skillEnter}
+            onMouseEnter={textEnter}
             onMouseLeave={textLeave}
           >
             <div className="img">
@@ -110,7 +110,7 @@ const Skill = ({ textTitleEnter, skillEnter, textLeave }) => {
             initial="hidden"
             animate="item4"
             variants={variants}
-            onMouseEnter={skillEnter}
+            onMouseEnter={textEnter}
             onMouseLeave={textLeave}
           >
             <div className="img">

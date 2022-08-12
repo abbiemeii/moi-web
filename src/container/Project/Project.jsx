@@ -118,11 +118,7 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                 <div className="img">
                   <img src={images.Project2} alt="project" loading="lazy" />
                 </div>
-                <div
-                  className="name"
-                  onMouseEnter={textEnter}
-                  onMouseLeave={textLeave}
-                >
+                <div className="name">
                   <span>Top 1</span>
                   <span>in photography class</span>
                 </div>
@@ -139,11 +135,7 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                 <div className="img">
                   <img src={images.Project3} alt="project" loading="lazy" />
                 </div>
-                <div
-                  className="name"
-                  onMouseEnter={textEnter}
-                  onMouseLeave={textLeave}
-                >
+                <div className="name">
                   <span>Top 1</span>
                   <span>in illustration class</span>
                 </div>
@@ -160,11 +152,7 @@ const Project = ({ textEnter, textTitleEnter, textLeave }) => {
                 <div className="img">
                   <img src={images.Project5} alt="project" loading="lazy" />
                 </div>
-                <div
-                  className="name"
-                  onMouseEnter={textEnter}
-                  onMouseLeave={textLeave}
-                >
+                <div className="name">
                   <span>Leader and Top 1</span>
                   <span>
                     in final project: Brand Identity - Meraki Ink Studio

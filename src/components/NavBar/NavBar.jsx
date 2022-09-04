@@ -58,13 +58,13 @@ const NavBar = () => {
 
       <div className="header__navbar-tool">
         <form action="">
-          <input type="search" required />
+          {/* <input type="search" required />
           <img
             src={images.SearchGradient}
             alt="search"
             className="search-button"
             loading="lazy"
-          />
+          /> */}
         </form>
 
         <Link to="/contact" className="box">

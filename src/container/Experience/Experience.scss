@@ -1,0 +1,120 @@
+@import "../../index.scss";
+
+.experience {
+    padding: 0 50px;
+    .container {
+        display: flex;
+        position: relative;
+        flex-direction: row-reverse;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        @include xs {
+            display: block;
+            padding: 0;
+        }
+        @media screen and(min-width: 1900px) {
+            padding-bottom: 200px;
+        }
+    }
+    @media screen and(min-width: 1900px) {
+        margin-top: 100px;
+    }
+    @include xs {
+        padding: 0 35px;
+    }
+}
+
+.experience__content {
+    width: 100%;
+    // padding: 0 300px;
+    @include mid(true);
+    flex-direction: column;
+    @include md {
+        padding-right: 0;
+        padding-left: 50px;
+    }
+    @include xs {
+        width: 100%;
+        padding-top: 0;
+        padding-left: 0;
+        justify-content: center;
+    }
+    @media screen and(max-width: 1280px) {
+        padding-top: 70px;
+    }
+    @include xs {
+        padding-top: 45px;
+    }
+
+    h1 {
+        justify-content: flex-start;
+        width: 300px;
+        margin-bottom: 80px;
+        @media screen and(max-width:1450px) {
+            font-size: 40px;
+        }
+        @include md {
+            font-size: 35px;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+        }
+        @include xs {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.experience__content-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 75px;
+    .time {
+        background: $linear-cl;
+        span {
+            font-size: 12px;
+            @include size(110px, 45px);
+            @include mid(true);
+        }
+        &.new {
+            border: 3px solid transparent;
+            background: linear-gradient(to right, $body-cl, $body-cl), $linear-cl;
+            background-clip: padding-box, border-box;
+            background-origin: padding-box, border-box;
+        }
+        @include md {
+            span {
+                @include size(100px, 35px);
+            }
+        }
+    }
+    .text {
+        h6 {
+            color: #00ffe6;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        p {
+            font-size: 14px;
+            @include sm {
+                font-size: 13px;
+            }
+            @include xs {
+                font-size: 14px;
+            }
+        }
+        a {
+            color: #00ffe6;
+        }
+        & > * {
+            margin-bottom: 15px;
+        }
+    }
+    img {
+        margin: 0 23px;
+    }
+
+    @include xs {
+        margin-bottom: 30px;
+    }
+}

@@ -1,4 +1,12 @@
-import { About, Background, Contact, Header, Project, Skill } from 'container';
+import {
+  About,
+  Background,
+  Contact,
+  Header,
+  Project,
+  Skill,
+  Experience,
+} from 'container';
 import React, { useEffect, useState } from 'react';
 
 import { Routes, Route } from 'react-router-dom';
@@ -78,6 +86,17 @@ function App() {
           path="/background"
           element={
             <Background
+              mousePosition={mousePosition}
+              textEnter={() => textEnter()}
+              textTitleEnter={() => textTitleEnter()}
+              textLeave={() => textLeave()}
+            />
+          }
+        />
+        <Route
+          path="/experience"
+          element={
+            <Experience
               mousePosition={mousePosition}
               textEnter={() => textEnter()}
               textTitleEnter={() => textTitleEnter()}

@@ -10,7 +10,7 @@ import { Link, NavLink } from 'react-router-dom';
 const headerMenu = [
   { name: 'About me', path: '/' },
   { name: 'My background', path: '/background' },
-  { name: 'Experience', path: '/experience' },
+  { name: 'My experience', path: '/experience' },
   { name: 'My skills', path: '/skills' },
   { name: 'My projects', path: '/projects' },
 ];

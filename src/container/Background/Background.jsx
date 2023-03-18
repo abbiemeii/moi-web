@@ -111,11 +111,11 @@ const Background = ({ textEnter, textTitleEnter, textLeave }) => {
               variants={variants}
             >
               <div className="time new">
-                <span>AUGUST 2022</span>
+                <span>SEPTEMBER 2022</span>
               </div>
               <img src={images.Dot3} alt="dot" loading="lazy" />
               <p onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                On my way to finish semester II - UIUX
+                TOP 2 in UIUX design
               </p>
             </motion.div>
           </div>

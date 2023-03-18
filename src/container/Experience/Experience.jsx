@@ -68,7 +68,7 @@ const Experience = ({ textEnter, textTitleEnter, textLeave }) => {
               animate="visible2"
               variants={variants}
             >
-              <div className="time">
+              <div className="time new">
                 <span>10.2021 - 12.2021</span>
               </div>
               <img src={images.Dot1} alt="dot" loading="lazy" />

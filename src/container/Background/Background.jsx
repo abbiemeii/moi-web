@@ -110,7 +110,7 @@ const Background = ({ textEnter, textTitleEnter, textLeave }) => {
               animate="visible4"
               variants={variants}
             >
-              <div className="time new">
+              <div className="time">
                 <span>SEPTEMBER 2022</span>
               </div>
               <img src={images.Dot3} alt="dot" loading="lazy" />

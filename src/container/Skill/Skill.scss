@@ -45,7 +45,7 @@
 }
 
 .skill__content-item {
-    width: calc((100% / 4) - 3rem);
+    width: calc((100% / 5) - 3rem);
     border: 2px solid transparent;
     background: linear-gradient(to right, $body-cl, $body-cl), $linear-cl;
     background-clip: padding-box, border-box;

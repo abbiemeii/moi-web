@@ -42,8 +42,15 @@ const Skill = ({ textTitleEnter, textEnter, textLeave }) => {
       opacity: 1,
       transition: {
         delay: 1.4,
-      },
+      }
     },
+    item5: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        delay: 1.6,
+      }
+    }
   };
 
   return (
@@ -118,6 +125,21 @@ const Skill = ({ textTitleEnter, textEnter, textLeave }) => {
             </div>
             <div className="name aqua">
               <span>Photography</span>
+            </div>
+          </motion.div>
+          <motion.div
+            className="skill__content-item"
+            initial="hidden"
+            animate="item5"
+            variants={variants}
+            onMouseEnter={textEnter}
+            onMouseLeave={textLeave}
+          >
+            <div className="img">
+              <img src={images.Skill5} alt="skill" loading="lazy" />
+            </div>
+            <div className="name pink">
+              <span>UIUX</span>
             </div>
           </motion.div>
         </div>

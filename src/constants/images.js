@@ -25,6 +25,7 @@ import Skill1 from '../assets/images/Skill1.png';
 import Skill2 from '../assets/images/Skill2.png';
 import Skill3 from '../assets/images/Skill3.png';
 import Skill4 from '../assets/images/Skill4.png';
+import Skill5 from '../assets/images/Skill5.png'
 import Project1 from '../assets/images/Project1.png';
 import Project2 from '../assets/images/Project2.png';
 import Project3 from '../assets/images/Project3.png';
@@ -59,6 +60,7 @@ export default {
   Skill2,
   Skill3,
   Skill4,
+  Skill5,
   Project1,
   Project2,
   Project3,
